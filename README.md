@@ -27,7 +27,7 @@ Gateway to the East/
 ## ▶️ Run Locally or through vercel link
 1. Open the folder in **Visual Studio Code**
 2. Use **Live Server** or open `index.html` directly in a browser
-
+3. Use **The deployed link** https://gateway-to-the-east.vercel.app/ 
 
 ## 🔗 Navigation
 - **Home**: `index.html`
