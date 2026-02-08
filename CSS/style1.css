@@ -1,0 +1,236 @@
+html {
+  scroll-behavior: smooth;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;           
+  padding: 10px 5%;             
+  background-color: #fff;        
+}
+.logo img {
+  height: 80px;                 
+  width: auto;
+}
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  margin-left: 20px;            
+  font-weight: 500;
+}
+.nav-links a:hover{
+  color: orange;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;      
+    text-align: center;
+  }
+
+  .nav-links {
+    margin-top: 15px;            
+  }
+
+  .nav-links a {
+    margin: 0 10px;              
+    font-size: 14px;
+  }
+  .nav-links a:hover{
+  color: orange;
+  font-weight: bold;
+}
+}
+
+
+.image-container {
+    position: relative;
+    width: 100%;
+    max-height: 500px;
+    overflow: hidden;
+}
+
+.image-title {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 3rem;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.8);
+    margin: 0;
+}
+
+
+.tabs-container {
+    padding: 30px 5%;
+}
+
+input[type="radio"] {
+    display: none; 
+}
+
+.tab-buttons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+    justify-content: center;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: 2px solid #009688;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #009688;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+#tab-about:checked ~ .tab-buttons label[for="tab-about"],
+#tab-reach:checked ~ .tab-buttons label[for="tab-reach"],
+#tab-attractions:checked ~ .tab-buttons label[for="tab-attractions"],
+#tab-stay:checked ~ .tab-buttons label[for="tab-stay"] {
+    background-color: #009688;
+    color: white;
+}
+
+.tab-content {
+    display: none;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+#tab-about:checked ~ #content-about,
+#tab-reach:checked ~ #content-reach,
+#tab-attractions:checked ~ #content-attractions,
+#tab-stay:checked ~ #content-stay {
+    display: block;
+}
+
+.info-card {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.info-card img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+.info-card p {
+    line-height: 1.6;
+    color: #444;
+}
+
+@media (max-width: 768px) {
+    .info-card {
+        flex-direction: column;
+    }
+    .info-card img {
+        width: 100%;
+    }
+}
+
+.main-footer {
+    background: rgba(42, 140, 163, 0.95);
+    color: white;
+    padding: 60px 0 20px 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 5%;
+    gap: 40px;
+}
+
+.footer-box {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-logo {
+    height: 70px;
+}
+
+.footer-box h3 {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.footer-box h3::after {
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100px;
+    height: 3px;
+    background: white; 
+}
+
+.footer-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-box ul li {
+    margin-bottom: 10px;
+}
+
+.footer-box a {
+    color: #e0e0e0;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-link {
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-weight: bold;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 0.9rem;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-box h3::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .social-icons {
+        justify-content: center;
+    }
+}
