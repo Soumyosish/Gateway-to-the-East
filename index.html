@@ -34,9 +34,6 @@
         <source src="videos/tourism_video.mp4" type="video/mp4" />
         Your browser does not support HTML5 video.
       </video>
-      <button class="video-mute-btn" id="muteBtn" title="Unmute video">
-        <i class="fas fa-volume-mute"></i>
-      </button>
       <section class="home-about-section" id="about-section">
         <div class="reveal-container">
           <h2 class="text">About Gateway to the East</h2>
@@ -410,22 +407,6 @@
         </div>
       </div>
     </section>
-    <script>
-      const video = document.getElementById("bg-video");
-      const muteBtn = document.getElementById("muteBtn");
-
-      muteBtn.addEventListener("click", function () {
-        if (video.muted) {
-          video.muted = false;
-          muteBtn.innerHTML = '<i class="fas fa-volume-up"></i>';
-          muteBtn.title = "Mute video";
-        } else {
-          video.muted = true;
-          muteBtn.innerHTML = '<i class="fas fa-volume-mute"></i>';
-          muteBtn.title = "Unmute video";
-        }
-      });
-    </script>
   </body>
   <footer class="main-footer">
     <div class="footer-container">
