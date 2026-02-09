@@ -44,7 +44,11 @@ html {
 video{
     border-radius: 1%;
 }
-
+.heading-title{
+  color: orange;
+  font-family: 'Times New Roman', Times, serif;
+  font-size:xx-large;
+}
 .rainbow-text {
   background: linear-gradient(
     to right, 
